@@ -1,0 +1,19 @@
+#menu{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
+    background-color: lightblue;
+    grid-area: 1 / col4-start / last-line / 6;
+}
+
+#logo{
+
+}
+
+#content{
+
+}
+
+#footer{
+
+}

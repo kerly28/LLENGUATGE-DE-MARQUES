@@ -7,20 +7,65 @@ header {
     padding-bottom: 30px;
     padding-top: 50px;
 }
-h1{
+
+h1 {
     font-size: 40px;
+    margin: 15px;
 }
-a{
-    color:white;
-    justify-content: space-between;
+
+nav {
+    display: flex;
+    justify-content: left;
+    padding: 10px;
 }
+
+a {
+    color: white;
+    margin: 15px;
+}
+
 div {
     display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    margin: 10px;
+    align-content: space-around;
+}
+
+img {
+    margin-bottom: 80px;
+}
+
+@media (min-width: 100px) and (max-width: 200px) {
+    header {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    a {
+
+        display: flex;
+        flex-direction: column;
+    }
 
 }
-#image1 {
+#image{
     clear: both;
 }
+img {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
 
 
 
