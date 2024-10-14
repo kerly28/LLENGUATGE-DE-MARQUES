@@ -1,0 +1,35 @@
+div{
+    height: 200px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('firefox-logo.svg');
+    margin-bottom: 10px;
+}
+#centered_small_icon{
+    background-color: blue;
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#green_line{
+    background-color: green;
+    background-image: none;
+
+}
+#full_width_icon{
+    background-color: red;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+#repeated_icon{
+    background-color: purple;
+    background-size: 5%;
+    background-position: center;
+    background-repeat: repeat;
+
+}

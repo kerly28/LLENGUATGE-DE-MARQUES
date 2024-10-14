@@ -1,0 +1,26 @@
+header {
+    background-color: black;
+    color: white;
+    height: 200px;
+    align-items: center;
+    padding-left: 80px;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+h1{
+    font-size: 40px;
+}
+a{
+    color:white;
+    justify-content: space-between;
+}
+div {
+    display: flex;
+
+}
+#image1 {
+    clear: both;
+}
+
+
+

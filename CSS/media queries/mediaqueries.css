@@ -1,0 +1,48 @@
+ #figure1 {
+        font-size: 50px;
+        font-weight: bold;
+        background-color: darkcyan;
+        border: solid black 1px;
+    }
+
+    #figure2 {
+        font-size: 16px;
+        background-color: darksalmon;
+        border: solid black 1px;
+    }
+
+    #figure3 {
+        font-size: 16px;
+        background-color: navajowhite;
+        border: solid black 1px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        padding-left: 80px;
+    }
+
+    @media (min-width: 300px) and (max-width: 600px) {
+
+        #figure1 {
+            Font-size: 16px;
+            font-weight: initial;
+            background-color: darkcyan;
+            border: solid black 1px;
+        }
+
+        #figure2 {
+            display: none;
+        }
+
+        #figure3 {
+            font-size: 16px;
+            background-color: navajowhite;
+            border: solid black 1px;
+            height: 76px;
+        }
+    }
+
+
+
+
+

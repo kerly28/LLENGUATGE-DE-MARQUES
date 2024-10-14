@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rutes>
+    <ruta>
+        <nom>La Travessa Cavalls del vent</nom>
+        <distancia>84km</distancia>
+        <desnivell>4500m</desnivell>
+        <refugis>
+            <regufi>
+                <nom>Lluis Estasen</nom>
+            </regufi>
+            <refugi>
+                <nom>Gresolet</nom>
+            </refugi>
+            <refugi>
+                <nom>Sant Jordi</nom>
+            </refugi>
+            <refugi>
+                <nom>Rebost</nom>
+            </refugi>
+            <refugi>
+                <nom>el Niu de l’Àliga</nom>
+            </refugi>
+            <refugi>
+                <nom>Serrat de les Esposes</nom>
+            </refugi>
+            <refugi>
+                <nom>Cortals de l’Ingla</nom>
+            </refugi>
+            <refugi>
+                <nom>Prat d’Aguiló</nom>
+            </refugi>
+        </refugis>
+    </ruta>
+    <ruta>
+        <nom>La Travessa Carros de Foc</nom>
+        <distancia>70km</distancia>
+        <desnivell>4600m</desnivell>
+        <refugis>
+            <regufi>
+                <nom>Saboredo</nom>
+            </regufi>
+            <refugi>
+                <nom>Restanca</nom>
+            </refugi>
+            <refugi>
+                <nom>Ventosa i Calvell</nom>
+            </refugi>
+            <refugi>
+                <nom>Estany Llong</nom>
+            </refugi>
+            <refugi>
+                <nom>Josep Maria Blanc</nom>
+            </refugi>
+            </refugis>
+    </ruta>
+</rutes>

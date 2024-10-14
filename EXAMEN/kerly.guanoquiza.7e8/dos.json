@@ -1,0 +1,26 @@
+[
+  {
+    "Equips": {
+      "Nom": "Els verds fregits",
+      "Capità": "Marc Pere", "dni": "9376283A",
+      "Jugadors": 12,
+      "Victories": 6,
+      "Derrotes": 3,
+      "Samarretes": "Verd,groc i blau",
+      "Pavellò": "Marina",
+      "carrer": "Avinguda Diagonal 424",
+      "Quota": "Pagada"
+    },
+
+    "Nom": "Forts<>Forts",
+    "Capità": "Marc Pere", "dni": "9376283A",
+    "Jugadors": 15,
+    "Victories": 3,
+    "Derrotes": 9,
+    "Samarretes": "Verde i negre",
+    "Pavellò": "Meridiana",
+    "carrer": "Avinguda Diagonal 424",
+    "Quota": "No pagada"
+  }
+
+]

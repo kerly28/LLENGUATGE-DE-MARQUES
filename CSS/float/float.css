@@ -1,0 +1,23 @@
+div{
+    height: 50px;
+    width: 90px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: paleturquoise;
+}
+
+#Float1{
+
+    float: left;
+
+}
+#Float2{
+
+    float: right;
+
+}
+ #bottom{
+     clear: both;
+ }
+

@@ -1,0 +1,65 @@
+nav {
+    background-color: lightblue;
+    margin-bottom: 15px;
+    margin-right: 150px;
+    margin-left: 150px;
+
+}
+
+.button {
+    padding: 8px;
+}
+
+#first {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+
+}
+
+#first .button {
+    flex-grow: 1
+
+}
+
+#second {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+
+}
+
+#third {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+
+}
+
+#forth {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+
+}
+
+#forth .button {
+    background-color: lightgreen;
+}
+
+#forth .b7 {
+    order: 1;
+    margin: 10px;
+    width: 100px;
+}
+#forth .b5{
+    order: 2;
+    margin: 10px;
+    width: 100px;
+}
+#forth .b6{
+    order: 3;
+    width: 150px;
+    margin: 10px;
+}
