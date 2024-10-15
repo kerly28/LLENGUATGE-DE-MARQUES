@@ -3,20 +3,14 @@ header {
     color: white;
     height: 200px;
     align-items: center;
-    padding-left: 80px;
+    padding-left: 20px;
     padding-bottom: 30px;
     padding-top: 50px;
+    text-align: center;
 }
 
 h1 {
-    font-size: 40px;
-    margin: 15px;
-}
-
-nav {
-    display: flex;
-    justify-content: left;
-    padding: 10px;
+    font-size: 50px;
 }
 
 a {
@@ -24,44 +18,48 @@ a {
     margin: 15px;
 }
 
-div {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-    margin: 10px;
-    align-content: space-around;
-}
-
 img {
-    margin-bottom: 80px;
+    margin: 10px;
 }
 
-@media (min-width: 100px) and (max-width: 200px) {
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
     header {
         background-color: black;
         color: white;
+        padding-bottom: 150px;
         text-align: center;
-        padding-bottom: 50px;
     }
 
     h1 {
         text-align: center;
     }
 
-    a {
-
+    nav {
         display: flex;
         flex-direction: column;
+
+        a {
+            margin: 1px;
+            text-align: center;
+        }
     }
+}
+
+#gallery {
+
+    text-align: center;
 
 }
-#image{
-    clear: both;
-}
-img {
-    display: flex;
-    flex-direction: column;
-}
+
+
+
+
 
 
 
