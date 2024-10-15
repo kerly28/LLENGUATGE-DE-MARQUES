@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="receptes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element  name="recepta" maxOccurs="1000">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nom" type="xs:string"/>
+                            <xs:element name="ingredients">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ingredient" maxOccurs="100">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="quantitat">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="valor" type="xs:integer"/>
+                                                                <xs:element name="mesura" type="xs:string"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="nom" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="passos">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="pas" type="xs:string" maxOccurs="10"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="dificultat">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:integer">
+                                    <xs:minInclusive value="0"/>
+                                    <xs:maxInclusive value="10"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
