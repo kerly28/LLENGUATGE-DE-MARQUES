@@ -1,0 +1,31 @@
+body{
+    background-color: lightblue;
+    height: 100vh; /* Altura de la ventana */
+    overflow: hidden; /* Evita el desplazamiento */
+}
+
+#clouds {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto; /
+    z-index: 1;
+}
+.
+#mario {
+    position: absolute;
+    bottom: 100px; /* Ajusta según el tamaño de Mario */
+    left: 50%;
+    transform: translateX(-50%); /* Centra Mario */
+    z-index: 2; /* Encima de las nubes y la base */
+}
+
+#base {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto; /* Ajusta según el tamaño de la imagen */
+    z-index: 3; /* Encima de todo */
+}
