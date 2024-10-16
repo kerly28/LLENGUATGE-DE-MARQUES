@@ -2,10 +2,10 @@
           xsi:noNamespaceSchemaLocation="kerly.guanoquiza.7e8.xsd">
     <recepta dificultat="5">
         <autor>
-            <nom>John Doe</nom>
+            <nom>Marc Ibañez</nom>
             <dni>45784548F</dni>
         </autor>
-        <nom>Papates amb llet</nom>
+        <nom>Patates amb llet</nom>
         <ingredients>
             <ingredient>
                 <quantitat>

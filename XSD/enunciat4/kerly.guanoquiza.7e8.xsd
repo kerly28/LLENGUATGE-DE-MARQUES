@@ -3,14 +3,14 @@
     <xs:element name="receptes">
         <xs:complexType>
             <xs:sequence>
-                <xs:element  name="recepta" maxOccurs="1000">
+                <xs:element  name="recepta" maxOccurs="10">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="nom" type="xs:string"/>
                             <xs:element name="ingredients">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="ingredient" maxOccurs="100">
+                                        <xs:element name="ingredient" maxOccurs="10">
                                             <xs:complexType>
                                                 <xs:sequence>
                                                     <xs:element name="quantitat">
@@ -36,7 +36,7 @@
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
-                        <xs:attribute name="dificultat">
+                        <xs:attribute name="dificultat" type="xs:string">
                             <xs:simpleType>
                                 <xs:restriction base="xs:integer">
                                     <xs:minInclusive value="0"/>

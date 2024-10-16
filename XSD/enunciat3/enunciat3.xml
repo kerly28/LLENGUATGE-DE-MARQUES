@@ -1,6 +1,5 @@
 <receptes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:noNamespaceSchemaLocation="kerly.guanoquiza.7e8.xsd">
-<recepta>
     <recepta dificultat="5">
         <nom>Patates amb llet</nom>
         <ingredients>
@@ -12,6 +11,6 @@
                 <nom>all</nom>
             </ingredient>
         </ingredients>
-        <passos> </passos>
+        <passos> 1.Pelar la patata </passos>
     </recepta>
-</recepta>
+</receptes>
