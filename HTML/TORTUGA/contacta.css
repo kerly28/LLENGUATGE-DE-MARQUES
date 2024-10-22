@@ -5,6 +5,7 @@ html {
 
 body {
     margin: 0;
+    background-color: #f0f5f0;
 
 }
 /*top*/
@@ -48,11 +49,15 @@ a {
 }
 
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: darkgreen;
     color: white;
     font-size: 11px;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 ul {
