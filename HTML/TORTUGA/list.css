@@ -6,7 +6,9 @@ html{
 body {
     margin: 0;
     background-color: #f0f5f0;
-
+    overflow-x: hidden; /*para que sea pantalla completa*/
+    background-image: url("photo-1659051635205-ac0d05db052e (1).jpg");
+    z-index: 1;
 }
 /*top*/
 #cap {
@@ -46,6 +48,11 @@ a {
 #botons a {
     color: darkolivegreen;
 
+}
+/*lista de animales*/
+
+article{
+    z-index: 2;
 }
 
 footer {

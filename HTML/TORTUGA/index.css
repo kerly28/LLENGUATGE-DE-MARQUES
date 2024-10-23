@@ -6,20 +6,24 @@ html {
 body {
     margin: 0;
     background-color: #f0f5f0;
-
+    overflow-x: hidden; /*para que sea pantalla completa*/
+    background-image: url("photo-1659051635205-ac0d05db052e (1).jpg");
 }
 /*top*/
 #cap {
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     padding: 5px;
     background-color: #cae8ca;
     border: 2px solid #4CAF50;
     z-index: 3;
 }
-
+#introducció{
+    margin-top: 100px;
+}
 h1 {
-    font-style: revert;
+
     font-weight: bold;
     display: flex;
     justify-content: flex-start;
@@ -41,7 +45,7 @@ a {
     gap: 20px;
     position: absolute;
     top: 20px;
-    right: 15px;
+    right: 30px;
 }
 
 #botons a {
@@ -57,38 +61,60 @@ article {
     padding-left: 50px;
     padding-bottom: 50px;
     padding-top: 50px;
+    align-content: center;
 
 }
 /*imatge animals*/
-#paragraf {
-    text-align: right;
+
+article{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: white;
 }
-#animals {
+.mundo {
     float: left;
     margin-right: 10px;
+    width: auto;
+    height: auto;
 }
 
-/*top */
-article{
-    margin: 20px;
-}
-#titol {
-    font-size: 30px;
+section{
     text-align: center;
+    margin-bottom: 15px;
+    color: white;
+
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+
 }
 
 .animal {
     padding: 20px;
-    border: solid 3px;
+    border: solid black 3px; /* Borde alrededor de cada rectángulo */
     background-image: url(mapamundianimal.png);
-    background-size: cover;
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el rectángulo */
+    background-position: center; /* Centra la imagen de fondo */
     list-style: none;
     margin: 20px;
     text-align: center;
-    left: auto;
-    right: auto;
-    z-index: 2;
+    width: 800px;
+    height: 400px;
+    overflow: hidden; /* Asegura que el contenido no se desborde */
     position: relative;
+}
+
+.animal img{
+    width: 350px;
+    height:250px;
+    margin: 0;
+    z-index: 1;
+}
+.animal p{
+    color: black;
+    z-index: 1;
 }
 
 .animal::before {
@@ -101,25 +127,11 @@ article{
     background-color: rgba(255, 255, 255, 0.5);
     z-index: 1;
 }
-
 .animal > * {
     position: relative;
     z-index: 2;
 }
-.animal img{
-    display: block;
-    margin: 0;
-    z-index: 1;
-}
-.animal p{
-    color: black;
-    z-index: 1;
-}
 
-#container{
-    display: flex;
-    justify-content: center;
-}
 
 footer {
     position: relative;
