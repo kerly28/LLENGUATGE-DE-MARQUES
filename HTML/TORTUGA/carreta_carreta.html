@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>EPEPC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="carreta_carreta.css"/>
 </head>
 <body>
@@ -22,8 +23,9 @@
 </ul>
   </header>
 <section>
+  <article>
 <h2 id="Tortuga"> Tortuga Babaua - Carreta carreta </h2>
-<div> <img src="../img/Loggerhead_turtle.jpg" alt="tortuga"/></div>
+<div> <img src="../img/Loggerhead_turtle.jpg" alt="tortuga" id="tortugueta"/></div>
   <h2 id="Estatdeconservacio"> Estat de conservació</h2>
   <p>Vulnerable</p>
   <h2 id="Poblacio"> Població</h2>
@@ -73,18 +75,19 @@
   </p>
   <p>
     Com tots els rèptils autòctons de Catalunya és una espècie protegida per la Llei 3/1988, de 4 de març, de protecció dels animals (DOGC número 967, del 18 de març del 1988).
-
-
   </p>
+  </article>
   <h2>Galeria</h2>
-  <div>
-    <ul>
+  <input type="checkbox" id="toggle-imagenes" style="display:none;">
+  <label for="toggle-imagenes" class="button">Imatges</label>
+  <div id="carretes">
+    <ul id="imatges">
       <li> <img src="../img/Loggerhead_turtle.jpg" alt="tortuga"/></li>
       <li> <img src="../img/caretta_caretta2.jpg" alt="tortuga" /></li>
       <li> <img src="../img/caretta_caretta3.jpg" alt="tortuga "/></li>
-
     </ul>
   </div>
+</section>
   <footer>
   <h2>Llicència</h2>
   <p>Pàgina web creada per Kerly Guanoquiza Lucero</p>
@@ -93,13 +96,11 @@
   <div>
     <img src="../img/license.png" alt="Llicència"/>
   </div>
-
   <h3>Segueix-nos</h3>
   <ul>
     <li><a href="https://joinmastodon.org/es">Mastodon</a></li>
     <li><a href="https://diasporafoundation.org/">Diaspora</a></li>
   </ul>
   </footer>
-</section>
 </body>
 </html>

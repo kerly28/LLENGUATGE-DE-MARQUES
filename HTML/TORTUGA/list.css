@@ -1,7 +1,9 @@
-html{
-    font-family: sans-serif;
+html {
     line-height: 1.5;
+    font-family: 'Roboto', sans-serif; /* Aplica Roboto a todo el cuerpo */
+
 }
+
 
 body {
     margin: 0;
@@ -10,17 +12,14 @@ body {
     background-image: url("photo-1659051635205-ac0d05db052e (1).jpg");
     z-index: 1;
 }
-/*top*/
-#cap {
-    position: sticky;
-    top: 0;
-    padding: 5px;
-    background-color: #cae8ca;
-    border: 2px solid #4CAF50;
+
+a {
+    text-decoration: none;
 }
 
+/*encabezado*/
 h1 {
-    font-style: revert;
+
     font-weight: bold;
     display: flex;
     justify-content: flex-start;
@@ -29,9 +28,14 @@ h1 {
     margin-left: 20px;
 }
 
-a {
-    text-decoration: none;
-
+#cap {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+    z-index: 2;
 }
 
 #botons {
@@ -42,38 +46,70 @@ a {
     gap: 20px;
     position: absolute;
     top: 20px;
-    right: 15px;
+    right: 30px;
 }
 
 #botons a {
     color: darkolivegreen;
 
 }
-/*lista de animales*/
-
-article{
-    z-index: 2;
+/*contenido*/
+ol{
+    list-style: none;
+}
+.container{
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    align-content: center;
+    color: white;
+}
+article {
+    display: flex; /* Activa Flexbox */
+    flex-direction:row; /* Permite que los elementos se envuelvan a la siguiente línea */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 50px; /* Espaciado interior */
 }
 
+.animal {
+    flex: 1 1 300px; /* Permite que los elementos se expandan, contraigan y tengan un ancho mínimo de 300px */
+    text-align: center; /* Centra el texto */
+    background-color: #f9f9f9; /* Fondo claro para cada animal */
+    border: 1px solid #ccc; /* Borde alrededor de cada animal */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+}
+
+.animal img {
+    max-width: 100%; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 4px; /* Bordes redondeados en la imagen (opcional) */
+}
+
+
+/*final*/
 footer {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     background-color: darkgreen;
     color: white;
     font-size: 11px;
     text-align: center;
-    padding: 10px;
+    padding: 20px; /* Espacio interno aumentado para mejor visualización */
+    position: relative; /* Asegura que el footer esté al final sin ser fijo */
+    width: 100%; /* Ancho completo */
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: none; /* Quita los puntos de la lista */
     margin: 0;
     padding: 0;
-
 }
 
 #final a {
-    color: white;
+    color: white; /* Color de los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
 }
+
+#final a:hover {
+    text-decoration: underline; /* Agrega subrayado al pasar el mouse */
+}
+

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>EPEPC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="contacta.css"/>
 </head>
 <body>
@@ -21,25 +22,31 @@
 </ul>
 </header>
 <section>
-    <h2>Contacta</h2>
-    <div>
-        <label for="text">Nom:</label>
-        <input type="text" id="text" name="text" value="I'm a text field">
-    </div>
-    <div>
-        <label for="email">El teu correu electrònic:</label>
-        <input type="email" id="email" name="email" multiple>
-    </div>
-    <div>
-        <label for="title">Títol:</label>
-        <input type="text" id="title" name="text" value="I'm a text field">
-    </div>
-    <div>
-        <label for="textarea">Missatge:</label>
-        <textarea id="textarea" name="user_message"></textarea>
-    </div>
-    <div class="button">
-        <button type="submit">Enviar Missatge</button>
+    <div class="container">
+        <div class="box">
+            <h2>Contacta</h2>
+            <form>
+                <div>
+                    <label for="text">Nom:</label>
+                    <input type="text" id="text" name="text" placeholder="Escribe tu nombre">
+                </div>
+                <div>
+                    <label for="email">El teu correu electrònic:</label>
+                    <input type="email" id="email" name="email" placeholder="Escribe tu correo">
+                </div>
+                <div>
+                    <label for="title">Títol:</label>
+                    <input type="text" id="title" name="title" placeholder="Escribe un título">
+                </div>
+                <div>
+                    <label for="textarea">Missatge:</label>
+                    <textarea id="textarea" name="user_message" placeholder="Escribe tu mensaje"></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit">Enviar Missatge</button>
+                </div>
+            </form>
+        </div>
     </div>
 </section>
     <footer id="final">

@@ -1,25 +1,22 @@
 html {
-    font-family: sans-serif;
     line-height: 1.5;
+    font-family: 'Roboto', sans-serif; /* Aplica Roboto a todo el cuerpo */
+
 }
 
 body {
     margin: 0;
-    background-color: #f0f5f0;
     overflow-x: hidden; /*para que sea pantalla completa*/
     background-image: url("photo-1659051635205-ac0d05db052e (1).jpg");
 }
-/*top*/
-#cap {
-    position: sticky;
-    top: 0;
-    padding: 5px;
-    background-color: #cae8ca;
-    border: 2px solid #4CAF50;
+
+a {
+    text-decoration: none;
 }
 
+/*encabezado*/
 h1 {
-    font-style: revert;
+
     font-weight: bold;
     display: flex;
     justify-content: flex-start;
@@ -28,9 +25,14 @@ h1 {
     margin-left: 20px;
 }
 
-a {
-    text-decoration: none;
-
+#cap {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+    z-index: 3;
 }
 
 #botons {
@@ -41,7 +43,7 @@ a {
     gap: 20px;
     position: absolute;
     top: 20px;
-    right: 15px;
+    right: 30px;
 }
 
 #botons a {
@@ -50,42 +52,56 @@ a {
 }
 
 /*contacta*/
-section{
-    background-color: #cae8ca; /* Color de fons del formulari */
-    border-radius: 20px; /* Arrodonir els costats */
-    padding: 20px; /* Espai intern */
-    width: 300px; /* Ample del formulari */
-    margin-top: 50px;
-    align-items: center;
-    align-content: center;
-    position: absolute;
-    top: auto;
-    left: auto;
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Altura completa de la ventana */
+    margin-top: 100px;
+    text-align: center;
 
 }
 
+.box {
+    background-color: #cae8ca; /* Color de fondo de la caja */
+    border: 7px solid darkgreen; /* Borde */
+    padding: 20px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 300px; /* Ancho de la caja */
+    margin-top: 20px;
+    line-height: 2.5;
+}
+
+#textarea {
+    resize: vertical;
+}
 
 
+/*final*/
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     background-color: darkgreen;
     color: white;
     font-size: 11px;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    position: relative; /* Asegura que el footer esté al final sin ser fijo */
+    width: 100%; /* Ancho completo */
 }
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-
 }
 
 #final a {
     color: white;
+    text-decoration: none;
 }
+
+#final a:hover {
+    text-decoration: underline;
+}
+/* Agrega subrayado*/

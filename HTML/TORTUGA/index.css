@@ -1,15 +1,40 @@
 html {
-    font-family: sans-serif;
     line-height: 1.5;
+    font-family: 'Roboto', sans-serif; /* Aplica Roboto a todo el cuerpo */
+
 }
+
 
 body {
-    padding: 0;
     margin: 0;
     background-color: #f0f5f0;
+    overflow-x: hidden; /*para que sea pantalla completa*/
+    background-image: url("photo-1659051635205-ac0d05db052e (1).jpg");
+    z-index: 1;
+}
+
+/*top*/
+
+#introducció {
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
 
 }
-/*top*/
+
+/*encabezado*/
+h1 {
+
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 50px;
+    color: limegreen;
+    margin-left: 20px;
+}
+
 #cap {
     position: fixed;
     top: 0;
@@ -20,21 +45,6 @@ body {
     z-index: 3;
 }
 
-h1 {
-    font-style: revert;
-    font-weight: bold;
-    display: flex;
-    justify-content: flex-start;
-    font-size: 50px;
-    color: limegreen;
-    margin-left: 20px;
-}
-
-a {
-    text-decoration: none;
-
-}
-
 #botons {
     display: flex;
     flex-direction: row;
@@ -43,65 +53,70 @@ a {
     gap: 20px;
     position: absolute;
     top: 20px;
-    right: 15px;
+    right: 30px;
 }
 
 #botons a {
     color: darkolivegreen;
 
 }
-
-#introducció {
-    font-size: 30px;
-    text-align: left;
-    padding-top: 80px;
-}
-
 article {
-    padding-top: 80px;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-
-
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 80px;
+    align-content: center;
+    color: white;
 }
+
 /*imatge animals*/
-#paragraf {
-    text-align: right;
-}
-#animals {
+
+
+
+.mundo {
     float: left;
     margin-right: 10px;
-    margin-top: 20px;
-
-
+    width: auto;
+    height: auto;
 }
 
-/*top */
-article{
-    margin: 20px;
-}
-#titol {
-    position: relative;
-    font-size: 30px;
+section {
     text-align: center;
+    margin-bottom: 15px;
+    color: white;
+
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+
 }
 
 .animal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 20px;
-    border: solid 3px;
-    background-image: url("agua-gotas-naturaleza-plantas-wallpaper-preview.jpg");
-    background-size: cover;
+    border: solid black 3px; /* Borde alrededor de cada rectángulo */
+    background-image: url(mapamundianimal.png);
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el rectángulo */
+    background-position: center; /* Centra la imagen de fondo */
     list-style: none;
     margin: 20px;
     text-align: center;
-    left: auto;
-    right: auto;
-    z-index: 2;
+    width: 800px;
+    height: 400px;
+    overflow: hidden; /* Asegura que el contenido no se desborde */
     position: relative;
+}
+
+.animal img {
+    width: 350px;
+    height: 250px;
+    margin: 0;
+    z-index: 1;
+}
+
+.animal p {
+    color: black;
+    z-index: 1;
 }
 
 .animal::before {
@@ -119,40 +134,31 @@ article{
     position: relative;
     z-index: 2;
 }
-.animal img{
-    display: block;
-    margin: 0;
-    z-index: 1;
-}
-.animal p{
-    color: black;
-    z-index: 1;
-}
 
-#container{
-    display: flex;
-    justify-content: center;
-}
-
+/*fina*/
 footer {
     background-color: darkgreen;
-    width: 100%;
     color: white;
     font-size: 11px;
     text-align: center;
-    padding: 10px;
-    position: relative;
+    padding: 20px; /* Espacio interno aumentado para mejor visualización */
+    position: relative; /* Asegura que el footer esté al final sin ser fijo */
+    width: 100%; /* Ancho completo */
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: none; /* Quita los puntos de la lista */
     margin: 0;
     padding: 0;
-
 }
 
 #final a {
-    color: white;
+    color: white; /* Color de los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+
+#final a:hover {
+    text-decoration: underline; /* Agrega subrayado al pasar el mouse */
 }
 
 

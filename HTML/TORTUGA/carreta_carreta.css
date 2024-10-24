@@ -1,24 +1,24 @@
 html {
-    font-family: sans-serif;
     line-height: 1.5;
+    font-family: 'Roboto', sans-serif; /* Aplica Roboto a todo el cuerpo */
 }
+
 
 body {
     margin: 0;
     background-color: #f0f5f0;
     overflow-x: hidden; /*para que sea pantalla completa*/
+    z-index: 1;
 }
 
-#cap {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 5px;
-    background-color: #cae8ca;
-    border: 2px solid #4CAF50;
-    z-index: 3;
+a {
+    text-decoration: none;
+}
+ul{
+    list-style: none;
 }
 
+/*encabezado*/
 h1 {
 
     font-weight: bold;
@@ -29,9 +29,14 @@ h1 {
     margin-left: 20px;
 }
 
-a {
-    text-decoration: none;
-
+#cap {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+    z-index: 3;
 }
 
 #botons {
@@ -50,31 +55,90 @@ a {
 
 }
 
-section{
+article {
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 200px;
+    align-content: center;
+    margin-right: 20px;
+}
 
+/*tortuga info*/
 
+#tortuga{
+    text-align: center;
+}
+#tortugueta {
+    float: right;
+    width: 600px; /* Ajusta el ancho a 300 píxeles */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+#carretes {
+    display: none; /* Oculta las imágenes inicialmente */
+    margin-top: 20px; /* Espacio superior */
+}
+
+#toggle-imagenes:checked + .button {
+    content: "Ocultar Imatges"; /* Cambia el texto del botón cuando se selecciona */
+}
+
+#toggle-imagenes:checked ~ #carretes {
+    display: block; /* Muestra las imágenes cuando el checkbox está marcado */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: limegreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; /* Elimina el subrayado del texto */
+    margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 
+
+#imatges li {
+    display: inline-block; /* Muestra las imágenes en línea */
+    margin: 10px; /* Espacio entre las imágenes */
+    align-items: center;
+}
+
+#imatges img {
+    width: 300px; /* Ajusta el tamaño de las imágenes */
+    height: 200px; /* Mantiene la proporción de las imágenes */
+    border-radius: 1px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto 3D */
+}
+/*final*/
 footer {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     background-color: darkgreen;
     color: white;
     font-size: 11px;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    position: relative; /* Asegura que el footer esté al final sin ser fijo */
+    width: 100%; /* Ancho completo */
 }
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-
 }
 
 #final a {
     color: white;
+    text-decoration: none;
 }
+
+#final a:hover {
+    text-decoration: underline;
+}
+
+
