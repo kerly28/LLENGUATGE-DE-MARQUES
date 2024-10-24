@@ -6,7 +6,8 @@ html {
 body {
     margin: 0;
     background-color: #f0f5f0;
-
+    overflow-x: hidden; /*para que sea pantalla completa*/
+    background-image: url("photo-1659051635205-ac0d05db052e (1).jpg");
 }
 /*top*/
 #cap {
@@ -47,6 +48,24 @@ a {
     color: darkolivegreen;
 
 }
+
+/*contacta*/
+section{
+    background-color: #cae8ca; /* Color de fons del formulari */
+    border-radius: 20px; /* Arrodonir els costats */
+    padding: 20px; /* Espai intern */
+    width: 300px; /* Ample del formulari */
+    margin-top: 50px;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    top: auto;
+    left: auto;
+
+
+}
+
+
 
 footer {
     position: fixed;
