@@ -1,13 +1,13 @@
 html {
     line-height: 1.5;
-    font-family: 'Roboto', sans-serif; /* Aplica Roboto a todo el cuerpo */
+    font-family: 'Roboto', sans-serif;
 }
 
 
 body {
     margin: 0;
     background-color: #f0f5f0;
-    overflow-x: hidden; /*para que sea pantalla completa*/
+    overflow-x: hidden;
     z-index: 1;
 }
 
@@ -60,7 +60,7 @@ article {
     margin-bottom: 50px;
     margin-top: 200px;
     align-content: center;
-    margin-right: 20px;
+
 }
 
 /*tortuga info*/
@@ -70,21 +70,21 @@ article {
 }
 #tortugueta {
     float: right;
-    width: 600px; /* Ajusta el ancho a 300 píxeles */
-    height: auto; /* Mantiene la proporción de la imagen */
+    width: 600px;
+    height: auto;
 }
 
 #carretes {
-    display: none; /* Oculta las imágenes inicialmente */
-    margin-top: 20px; /* Espacio superior */
+    display: none;
+    margin-top: 20px;
 }
 
 #toggle-imagenes:checked + .button {
-    content: "Ocultar Imatges"; /* Cambia el texto del botón cuando se selecciona */
+    content: "Ocultar Imatges";
 }
 
 #toggle-imagenes:checked ~ #carretes {
-    display: block; /* Muestra las imágenes cuando el checkbox está marcado */
+    display: block;
 }
 
 .button {
@@ -96,7 +96,7 @@ article {
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
-    text-decoration: none; /* Elimina el subrayado del texto */
+    text-decoration: none;
     margin-bottom: 20px;
     margin-left: 20px;
 }
@@ -104,16 +104,16 @@ article {
 
 
 #imatges li {
-    display: inline-block; /* Muestra las imágenes en línea */
-    margin: 10px; /* Espacio entre las imágenes */
+    display: inline-block;
+    margin: 10px;
     align-items: center;
 }
 
 #imatges img {
-    width: 300px; /* Ajusta el tamaño de las imágenes */
-    height: 200px; /* Mantiene la proporción de las imágenes */
-    border-radius: 1px; /* Esquinas redondeadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto 3D */
+    width: 300px;
+    height: 200px;
+    border-radius: 1px; /
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /
 }
 /*final*/
 footer {
@@ -122,8 +122,8 @@ footer {
     font-size: 11px;
     text-align: center;
     padding: 20px;
-    position: relative; /* Asegura que el footer esté al final sin ser fijo */
-    width: 100%; /* Ancho completo */
+    position: relative;
+    width: 100%;
 }
 
 ul {
@@ -139,6 +139,26 @@ ul {
 
 #final a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    #cap {
+        padding: 5px;
+    }
+    #tortugueta {
+        float: right;
+        width: 200px;
+        height: auto;
+    }
+
+    #botons {
+        position: static;
+        justify-content: center;
+    }
 }
 
 

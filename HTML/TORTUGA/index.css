@@ -60,6 +60,16 @@ h1 {
     color: darkolivegreen;
 
 }
+
+#animals img{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: solid 1px;
+}
+
+
+
 article {
     margin-left: 50px;
     margin-bottom: 50px;
@@ -68,9 +78,8 @@ article {
     color: white;
 }
 
+
 /*imatge animals*/
-
-
 
 .mundo {
     float: left;
@@ -141,24 +150,69 @@ footer {
     color: white;
     font-size: 11px;
     text-align: center;
-    padding: 20px; /* Espacio interno aumentado para mejor visualización */
-    position: relative; /* Asegura que el footer esté al final sin ser fijo */
-    width: 100%; /* Ancho completo */
+    padding: 20px;
+    position: relative;
+    width: 100%;
 }
 
 ul {
-    list-style-type: none; /* Quita los puntos de la lista */
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
 #final a {
-    color: white; /* Color de los enlaces */
-    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: white;
+    text-decoration: none;
 }
 
 #final a:hover {
-    text-decoration: underline; /* Agrega subrayado al pasar el mouse */
+    text-decoration: underline;
 }
+
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    #cap {
+        padding: 5px;
+    }
+
+    #botons {
+        position: static;
+        justify-content: center;
+    }
+
+
+    #animals img {
+        width: 100%;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .animal {
+        padding: 10px;
+        border: solid black 1px;
+        width: 95%;
+        margin: 10px auto;
+
+
+    }
+
+    .animal img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .animal p {
+        font-size: 14px;
+    }
+}
+
 
 

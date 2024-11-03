@@ -1,6 +1,6 @@
 html {
     line-height: 1.5;
-    font-family: 'Roboto', sans-serif; /* Aplica Roboto a todo el cuerpo */
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -57,19 +57,19 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh; /* Altura completa de la ventana */
+    height: 80vh; /* Altura completa de la finestra */
     margin-top: 100px;
     text-align: center;
 
 }
 
 .box {
-    background-color: #cae8ca; /* Color de fondo de la caja */
-    border: 7px solid darkgreen; /* Borde */
-    padding: 20px; /* Espacio interno */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
-    width: 300px; /* Ancho de la caja */
+    background-color: #cae8ca;
+    border: 7px solid darkgreen;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
     margin-top: 20px;
     line-height: 2.5;
 }
@@ -86,8 +86,8 @@ footer {
     font-size: 11px;
     text-align: center;
     padding: 20px;
-    position: relative; /* Asegura que el footer esté al final sin ser fijo */
-    width: 100%; /* Ancho completo */
+    position: relative;
+    width: 100%;
 }
 
 ul {
@@ -104,4 +104,18 @@ ul {
 #final a:hover {
     text-decoration: underline;
 }
-/* Agrega subrayado*/
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    #cap {
+        padding: 5px;
+    }
+
+    #botons {
+        position: static;
+        justify-content: center;
+    }
+}
