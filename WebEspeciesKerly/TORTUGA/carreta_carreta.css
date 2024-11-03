@@ -1,0 +1,164 @@
+html {
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    background-color: #f0f5f0;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/*encabezado*/
+h1 {
+
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 50px;
+    color: limegreen;
+    margin-left: 20px;
+}
+
+#cap {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+    z-index: 3;
+}
+
+#botons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 20px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+#botons a {
+    color: darkolivegreen;
+
+}
+
+article {
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 200px;
+    align-content: center;
+
+}
+
+/*tortuga info*/
+
+#tortuga{
+    text-align: center;
+}
+#tortugueta {
+    float: right;
+    width: 600px;
+    height: auto;
+}
+
+#carretes {
+    display: none;
+    margin-top: 20px;
+}
+
+#toggle-imagenes:checked + .button {
+    content: "Ocultar Imatges";
+}
+
+#toggle-imagenes:checked ~ #carretes {
+    display: block;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: limegreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+
+#imatges li {
+    display: inline-block;
+    margin: 10px;
+    align-items: center;
+}
+
+#imatges img {
+    width: 300px;
+    height: 200px;
+    border-radius: 1px; /
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /
+}
+/*final*/
+footer {
+    background-color: darkgreen;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#final a {
+    color: white;
+    text-decoration: none;
+}
+
+#final a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    #cap {
+        padding: 5px;
+    }
+    #tortugueta {
+        float: right;
+        width: 200px;
+        height: auto;
+    }
+
+    #botons {
+        position: static;
+        justify-content: center;
+    }
+}
+
+

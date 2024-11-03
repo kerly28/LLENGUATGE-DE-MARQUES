@@ -1,0 +1,149 @@
+html {
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+body {
+    margin: 0;
+    background-color: #f0f5f0;
+    overflow-x: hidden;
+    background-image: url("photo-1659051635205-ac0d05db052e (1).jpg");
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*encabezado*/
+h1 {
+
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 50px;
+    color: limegreen;
+    margin-left: 20px;
+}
+
+#cap {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+    z-index: 2;
+}
+
+#botons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 20px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+#botons a {
+    color: darkolivegreen;
+
+}
+/*contenido*/
+ol{
+    list-style: none;
+
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.animal {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    text-align: left;
+    background-color: #538a61;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.animal img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    grid-column: 1;
+}
+
+.animal p {
+    grid-column: 2;
+    display: flex;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/*final*/
+footer {
+    background-color: darkgreen;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#final a {
+    color: white;
+    text-decoration: none;
+}
+
+#final a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    #cap {
+        padding: 5px;
+    }
+
+    #botons {
+        position: static;
+        justify-content: center;
+
+        .animal {
+            grid-template-columns: 1fr; /* Pone la imagen y el texto uno encima del otro */
+        }
+    }
+}
