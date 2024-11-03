@@ -1,0 +1,218 @@
+html {
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif; /* Aplica Roboto a todo el cuerpo */
+
+}
+
+
+body {
+    margin: 0;
+    background-color: #f0f5f0;
+    overflow-x: hidden; /*para que sea pantalla completa*/
+    background-image: url("photo-1659051635205-ac0d05db052e (1).jpg");
+    z-index: 1;
+}
+
+/*top*/
+
+#introducció {
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+/*encabezado*/
+h1 {
+
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 50px;
+    color: limegreen;
+    margin-left: 20px;
+}
+
+#cap {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+    z-index: 3;
+}
+
+#botons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 20px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+#botons a {
+    color: darkolivegreen;
+
+}
+
+#animals img{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: solid 1px;
+}
+
+
+
+article {
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 80px;
+    align-content: center;
+    color: white;
+}
+
+
+/*imatge animals*/
+
+.mundo {
+    float: left;
+    margin-right: 10px;
+    width: auto;
+    height: auto;
+}
+
+section {
+    text-align: center;
+    margin-bottom: 15px;
+    color: white;
+
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.animal {
+    padding: 20px;
+    border: solid black 3px; /* Borde alrededor de cada rectángulo */
+    background-image: url(mapamundianimal.png);
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el rectángulo */
+    background-position: center; /* Centra la imagen de fondo */
+    list-style: none;
+    margin: 20px;
+    text-align: center;
+    width: 800px;
+    height: 400px;
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    position: relative;
+}
+
+.animal img {
+    width: 350px;
+    height: 250px;
+    margin: 0;
+    z-index: 1;
+}
+
+.animal p {
+    color: black;
+    z-index: 1;
+}
+
+.animal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+.animal > * {
+    position: relative;
+    z-index: 2;
+}
+
+/*fina*/
+footer {
+    background-color: darkgreen;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#final a {
+    color: white;
+    text-decoration: none;
+}
+
+#final a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    #cap {
+        padding: 5px;
+    }
+
+    #botons {
+        position: static;
+        justify-content: center;
+    }
+
+
+    #animals img {
+        width: 100%;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .animal {
+        padding: 10px;
+        border: solid black 1px;
+        width: 95%;
+        margin: 10px auto;
+
+
+    }
+
+    .animal img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .animal p {
+        font-size: 14px;
+    }
+}
+
+
+
