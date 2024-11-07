@@ -1,0 +1,14 @@
+html {
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif; /* Aplica Roboto a todo el cuerpo */
+
+}
+
+body {
+    margin: 0;
+    background-image: url("wallpaperflare.com_wallpaper.jpg");
+    background-size: contain;
+    overflow-x: hidden; /*para que sea pantalla completa*/
+    z-index: 1;
+    opacity: 50;
+}

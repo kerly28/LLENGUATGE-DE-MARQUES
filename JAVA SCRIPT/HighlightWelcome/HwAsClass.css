@@ -1,14 +1,14 @@
-p {
-    padding: 10px;
-    border: solid black 1px;
-    background: #cae8ca;
-
-}
 
 p:hover{
     padding-top: 25px;
     padding-bottom: 25px;
     transition: 3s;
+}
+
+.highlighted{
+    padding: 10px;
+    border: solid black 1px;
+    background: #cae8ca;
 }
 
 
