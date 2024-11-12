@@ -43,14 +43,15 @@ button {
     margin-bottom: 20px;
 }
 
-#tutor {
+#menor {
     display: none;
     background-color: #e7f5e7;
-    padding: 10px;
+    padding: 25px;
     margin-top: 20px;
     border-radius: 8px;
 }
 
+/*Pàgina de gracies per omplir el formulari*/
 #inici{
     background-color: #4CAF50;
     color: white;
