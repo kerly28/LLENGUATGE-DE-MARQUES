@@ -8,12 +8,13 @@ const nameTutor = document.getElementById("nomTutor");
 const lastnameTutor = document.getElementById("cognomsTutor");
 const menor = document.getElementById("menor");
 const button = document.querySelector("button");
-const msgError = document.querySelectorAll(".error");
 
 const addError = (element, message) => {
+
     const errorElement = document.createElement('p');
     errorElement.textContent = message;
-    errorElement.style.color = 'green';
+    errorElement.style.color = 'red';
+    element.appendChild(errorElement);
 };
 
 button.addEventListener('click', (event) => {
@@ -21,19 +22,19 @@ button.addEventListener('click', (event) => {
 
     let valid = true;
 
-
     if (firstName.value.length === 0) {
         let errorP = firstName.parentNode.querySelector(".error")
         addError(errorP, "El camp Nom NO pot estar buït");
         valid = false;
     }
     if (lastname.value.length === 0) {
-        let errorP = lastnameTutor.parentNode.querySelector(".error")
+        let errorP = lastname.parentNode.querySelector(".error")
         addError(errorP, "El camp Cognoms NO pot estar buït");
         valid = false;
     }
     if (address.value.length === 0) {
-        addError(msgError[2], "El camp Adreça NO pot estar buït");
+        let errorP = address.parentNode.querySelector(".error")
+        addError(errorP, "El camp Adreça NO pot estar buït");
         valid = false;
     }
     if (age.value.length === 0) {
@@ -45,12 +46,12 @@ button.addEventListener('click', (event) => {
 
     }
     if (mail.value.length === 0) {
-        let errorP = firstName.parentNode.querySelector(".error")
+        let errorP = mail.parentNode.querySelector(".error")
         addError(errorP, "El camp Email NO pot estar buït");
         valid = false;
     }
     if (telefon.value.length === 0) {
-        let errorP = firstName.parentNode.querySelector(".error")
+        let errorP = telefon.parentNode.querySelector(".error")
         addError(errorP, "El camp Telèfon NO pot estar buït");
         valid = false;
     }
