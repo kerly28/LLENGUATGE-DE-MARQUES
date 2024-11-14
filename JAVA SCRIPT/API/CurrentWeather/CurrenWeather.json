@@ -1,0 +1,46 @@
+{
+  "coord": {
+    "lon": 2.1837,
+    "lat": 41.4534
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "cel net",
+      "icon": "01d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 12.54,
+    "feels_like": 11.83,
+    "temp_min": 11.13,
+    "temp_max": 14.32,
+    "pressure": 1021,
+    "humidity": 76,
+    "sea_level": 1021,
+    "grnd_level": 1010
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 2.68,
+    "deg": 334,
+    "gust": 4.02
+  },
+  "clouds": {
+    "all": 10
+  },
+  "dt": 1731570578,
+  "sys": {
+    "type": 2,
+    "id": 2032199,
+    "country": "ES",
+    "sunrise": 1731566344,
+    "sunset": 1731601959
+  },
+  "timezone": 3600,
+  "id": 6252065,
+  "name": "Nou Barris",
+  "cod": 200
+}

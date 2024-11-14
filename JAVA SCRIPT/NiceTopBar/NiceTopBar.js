@@ -1,11 +1,9 @@
+window.addEventListener('scroll', function (){
+    const header=document.querySelector("header");
+    const maxHeight=600;
+    const minHeight=100;
+    const scroll=window.scrollY
 
-window.addEventListener('scroll', function() {
-    const header = document.querySelector('header');
-    const scrollY = window.scrollY;
-    const heightMax = 600;
-    const heightMin = 100;
-
-    const newHeight = Math.max(heightMin, heightMax - scrollY);
-
-    header.style.height = newHeight + 'px';
+    const newHeight= Math.max(minHeight,maxHeight-scroll)
+    header.style.height= newHeight+'px';
 });

@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("Captura de pantalla de 2024-11-14 09-36-27.png");
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+#titol img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+article {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.53);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#pluja, #solejat, #nublat, #electrica {
+    text-align: center;
+    padding: 20px;
+
+}
+
+#pluja p, #solejat p, #nublat p, #electrica p {
+    margin: 10px 0;
+}
+
+
+section {
+    background-color: rgba(255, 255, 255, 0.53);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+#temperatura, #tempMax, #tempMin, #precipitacions {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+
+h3, h4 {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pluja, #solejat, #nublat, #electrica {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+}

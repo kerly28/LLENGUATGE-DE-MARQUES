@@ -2,9 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Weather</title>
+    <link rel="stylesheet" href="CurrentWeather.css">
+    <script src="CurrentWeather.js" type="module"></script>
 </head>
 <body>
+<article>
+    <a id="titol" href="https://fontmeme.com/es/fuente-de-toy-story/">
+        <img src="https://fontmeme.com/permalink/241114/0414195974915eef693b3e20d6b8d97f.png" alt="fuente-de-toy-story">
+    </a>
+    <h2>Els temps que fa a l'ITB és 😃:</h2>
+
+    <div class="container">
+        <div id="pluja">
+            <p style="font-size:100px">🌧</p>
+            <p><strong>Pluja</strong></p>
+        </div>
+        <div id="solejat">
+            <p style="font-size:100px">🌞</p>
+            <p><strong>Solejat</strong></p>
+        </div>
+        <div id="nublat">
+            <p style="font-size:100px">🌫</p>
+            <p><strong>Parcialment ennuvolat</strong></p>
+        </div>
+        <div id="electrica">
+            <p style="font-size:100px">🌩</p>
+            <p><strong>Tormenta elèctrica</strong></p>
+        </div>
+    </div>
+</article>
+
+<section>
+    <h3>🌡Temperatura:</h3>
+    <p id="temperatura"></p>
+    <h4>🌡Temperatura màxima:</h4>
+    <p id="tempMax"></p>
+    <h4>🌡Temperatura mínima:</h4>
+    <p id="tempMin"></p>
+    <h3>☔Probalitat de precipitacions:</h3>
+    <p id="precipitacions"></p>
+</section>
 
 </body>
 </html>
