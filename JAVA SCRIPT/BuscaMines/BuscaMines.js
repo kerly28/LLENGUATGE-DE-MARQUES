@@ -1,12 +1,14 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const gridSize = 8; // Tablero de 8x8
-    const totalCells = gridSize * gridSize; // 64 celdas en total
-    const mineCount = 10; // Número de minas
-    const container = document.getElementById("containercontainer");
+const game= document.getElementsByClassName("casilla");
+const mineCount=10;
+const casilla=document.getElementsByClassName("casilla");
+const size=8;
 
-    // Generamos las posiciones de las minas
-    const minePositions = generateMinePositions();
+function generateRandomBomb() {
+let mineCount= Math.floor(Math.random()*size)
 
- function generateMinePositions(){
+    if(mineCount<size){
 
- }
+    }
+
+}
+
