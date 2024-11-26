@@ -53,69 +53,69 @@ h1 {
 
 /*contacta*/
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh; /* Altura completa de la finestra */
-    margin-top: 100px;
-    text-align: center;
-
-}
-
-.box {
-    background-color: #cae8ca;
-    border: 7px solid darkgreen;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    margin-top: 20px;
-    line-height: 2.5;
-}
-
-#textarea {
-    resize: vertical;
-}
-
-
-/*final*/
-footer {
-    background-color: darkgreen;
-    color: white;
-    font-size: 11px;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    width: 100%;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-#final a {
-    color: white;
-    text-decoration: none;
-}
-
-#final a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 767px) {
-    h1 {
-        font-size: 28px;
-    }
-
-    #cap {
-        padding: 5px;
-    }
-
-    #botons {
-        position: static;
+    .container {
+        display: flex;
         justify-content: center;
+        align-items: center;
+        height: 80vh; /* Altura completa de la finestra */
+        margin-top: 100px;
+        text-align: center;
+
     }
-}
+
+    .box {
+        background-color: #cae8ca;
+        border: 7px solid darkgreen;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin-top: 20px;
+        line-height: 2.5;
+    }
+
+    #textarea {
+        resize: vertical;
+    }
+
+
+    /*final*/
+    footer {
+        background-color: darkgreen;
+        color: white;
+        font-size: 11px;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        width: 100%;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #final a {
+        color: white;
+        text-decoration: none;
+    }
+
+    #final a:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 767px) {
+        h1 {
+            font-size: 28px;
+        }
+
+        #cap {
+            padding: 5px;
+        }
+
+        #botons {
+            position: static;
+            justify-content: center;
+        }
+    }

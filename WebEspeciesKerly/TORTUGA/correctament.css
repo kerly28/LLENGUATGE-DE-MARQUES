@@ -1,0 +1,111 @@
+html {
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden; /*para que sea pantalla completa*/
+    background-image: url("photo-1659051635205-ac0d05db052e (1).jpg");
+}
+
+a {
+    text-decoration: none;
+}
+
+/*encabezado*/
+h1 {
+
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 50px;
+    color: limegreen;
+    margin-left: 20px;
+}
+
+#cap {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+    z-index: 3;
+}
+
+#botons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 20px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+#botons a {
+    color: darkolivegreen;
+
+}
+
+section{
+    color: white;
+    font-size: 50px;
+    padding: 150px;
+    text-align: center;
+    align-content: center;
+    text-shadow: 1px 1px 2px black;
+}
+input[type="text"],
+input[type="email"]
+{
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+}
+
+/*final*/
+footer {
+    background-color: darkgreen;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#final a {
+    color: white;
+    text-decoration: none;
+}
+
+#final a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    #cap {
+        padding: 5px;
+    }
+
+    #botons {
+        position: static;
+        justify-content: center;
+    }
+}
