@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <title>EPEPC</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="contacta.css"/>
+    <link rel="stylesheet" href="../css/contacta.css"/>
+    <script src="scroll.js" type="module"></script>
+    <script src="formularitor.js" type="module"></script>
 </head>
 <body>
 <header id="cap">
 <h1>EPEPC</h1>
-<ul id="botons">
+<ul class="navbar" id="botons">
     <li>
         <a id="Inici" href="index.html">Inici</a>
     </li>
@@ -28,19 +30,23 @@
             <form>
                 <div>
                     <label for="text">Nom:</label>
-                    <input type="text" id="text" name="text" placeholder="Escribe tu nombre">
+                    <input type="text" id="text" name="nom" placeholder="Escribe tu nombre">
+                    <p class="error"></p>
                 </div>
                 <div>
                     <label for="email">El teu correu electrònic:</label>
                     <input type="email" id="email" name="email" placeholder="Escribe tu correo">
+                    <p class="error"></p>
                 </div>
                 <div>
                     <label for="title">Títol:</label>
                     <input type="text" id="title" name="title" placeholder="Escribe un título">
+                    <p class="error"></p>
                 </div>
                 <div>
                     <label for="textarea">Missatge:</label>
-                    <textarea id="textarea" name="user_message" placeholder="Escribe tu mensaje"></textarea>
+                    <input id="textarea" name="user_message" placeholder="Escribe tu mensaje" >
+                    <p class="error"></p>
                 </div>
                 <div class="button">
                     <button type="submit">Enviar Missatge</button>
@@ -55,7 +61,7 @@
     <p>Llicència <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.es">Creative Commons
         Reconeixement-NoComercial-CompartirIgual 3.0</a></p>
     <div>
-        <img src="license.png" alt="Llicència"/>
+        <img src="../img/license.png" alt="Llicència"/>
     </div>
 
     <h3>Segueix-nos</h3>
