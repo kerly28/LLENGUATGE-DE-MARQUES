@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plantilla Elegante</title>
+  <link rel="stylesheet" href="exercici.css">
+  <script src="exercici.js" type="module"></script>
+</head>
+<body>
+<header id="header">
+  <h1>Mi Página Elegante</h1>
+  <nav>
+    <ul class="menu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="inicio">
+    <h2>Bienvenido</h2>
+    <p>Este es el inicio de mi página web.</p>
+    <button id="cambiar-color">Cambiar color de fondo</button>
+  </section>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Información interesante sobre mí.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Puedes contactarme a través de este formulario.</p>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" placeholder="Tu nombre">
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  <section id="galeria-hover">
+    <h2>Galería Hover</h2>
+    <div class="imagenes-hover">
+      <img src="https://via.placeholder.com/200x150?text=Imagen+1" alt="Imagen 1">
+      <img src="https://via.placeholder.com/200x150?text=Imagen+2" alt="Imagen 2">
+      <img src="https://via.placeholder.com/200x150?text=Imagen+3" alt="Imagen 3">
+    </div>
+  </section>
+  <section id="galeria">
+    <h2>Galería de Imágenes</h2>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="https://via.placeholder.com/150" alt="Imagen 1">
+        <p>Descripción de la Imagen 1</p>
+      </div>
+      <div class="grid-item">
+        <img src="https://via.placeholder.com/150" alt="Imagen 2">
+        <p>Descripción de la Imagen 2</p>
+      </div>
+      <div class="grid-item">
+        <img src="https://via.placeholder.com/150" alt="Imagen 3">
+        <p>Descripción de la Imagen 3</p>
+      </div>
+      <div class="grid-item">
+        <img src="https://via.placeholder.com/150" alt="Imagen 4">
+        <p>Descripción de la Imagen 4</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="footer">
+  <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>

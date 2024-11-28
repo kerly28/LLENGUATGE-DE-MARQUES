@@ -9,8 +9,10 @@ body {
     margin: 0;
     background-color: #f0f5f0;
     overflow-x: hidden; /*para que sea pantalla completa*/
-    background-image: url("photo-1659051635205-ac0d05db052e (1).jpg");
+    background-image: url("../img/photo-1659051635205-ac0d05db052e (1).jpg");
     z-index: 1;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover;
 }
 
 /*top*/
@@ -25,40 +27,60 @@ a {
 }
 
 /*encabezado*/
-h1 {
-
-    font-weight: bold;
-    display: flex;
-    justify-content: flex-start;
-    font-size: 50px;
-    color: limegreen;
-    margin-left: 20px;
-}
-
 #cap {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 5px;
     background-color: #cae8ca;
     border: 2px solid #4CAF50;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     z-index: 3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+.navbar{
+    margin-right: 50px;
+}
+
+#cap h1 {
+    font-weight: bold;
+    font-size: 30px;
+    color: limegreen;
+    margin: 0 20px;
+}
+
 
 #botons {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
     list-style: none;
+    padding: 0;
     gap: 20px;
-    position: absolute;
-    top: 20px;
-    right: 30px;
 }
 
-#botons a {
-    color: darkolivegreen;
 
+#botons li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4CAF50;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+
+#botons li a:hover {
+    color: white;
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+main {
+    margin-top: 80px;
+    padding: 20px;
 }
 
 #animals img{
@@ -104,7 +126,7 @@ section {
 .animal {
     padding: 20px;
     border: solid black 3px; /* Borde alrededor de cada rectángulo */
-    background-image: url(mapamundianimal.png);
+    background-image: url(../img/mapamundianimal.png);
     background-size: cover; /* Asegura que la imagen de fondo cubra todo el rectángulo */
     background-position: center; /* Centra la imagen de fondo */
     list-style: none;
@@ -144,7 +166,8 @@ section {
     z-index: 2;
 }
 
-/*fina*/
+/*final*/
+
 footer {
     background-color: darkgreen;
     color: white;
@@ -155,7 +178,7 @@ footer {
     width: 100%;
 }
 
-ul {
+.seguir{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -168,6 +191,32 @@ ul {
 
 #final a:hover {
     text-decoration: underline;
+}
+
+/*boton flecha*/
+
+/*en botton poner pixeles en imagen tocar porcentaje*/
+
+.buttoncontent{
+    align-items: center;
+    justify-content: right;
+    display: flex;
+}
+
+.buttonfletxa {
+
+    background-color: rgba(0, 0, 0, 0);
+    border: rgb(0,0,0,0);
+    flex:1;
+    max-width: 80px;
+    height: 40px;
+
+
+}
+
+.imgfletxa{
+    width: 90%;
+    height: 90%;
 }
 
 

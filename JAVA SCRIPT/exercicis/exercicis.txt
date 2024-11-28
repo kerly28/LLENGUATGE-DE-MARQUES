@@ -1,0 +1,66 @@
+
+ <section id="mostrar-ocultar">
+            <h2>Mostrar/Ocultar Contenido</h2>
+            <button id="toggle-content">Mostrar/Ocultar</button>
+            <p id="contenido" style="display: none;">Este es el contenido que se puede mostrar u ocultar.</p>
+        </section>
+
+// Efecto 3: Mostrar/Ocultar Contenido
+const toggleContentBtn = document.getElementById('toggle-content');
+const contenido = document.getElementById('contenido');
+
+toggleContentBtn.addEventListener('click', () => {
+    if (contenido.style.display === 'none') {
+        contenido.style.display = 'block'; // Muestra el contenido
+    } else {
+        contenido.style.display = 'none'; // Oculta el contenido
+    }
+});
+
+<button id="scroll-top-btn">↑</button>
+
+/* Botón para subir */
+#scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: none; /* Oculto por defecto */
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease;
+}
+
+#scroll-top-btn:hover {
+    transform: scale(1.1); /* Agranda ligeramente al pasar el cursor */
+    background-color: #45a049;
+
+    // Seleccionamos el botón
+    const scrollTopBtn = document.getElementById('scroll-top-btn');
+
+    // Mostrar/Ocultar el botón según el scroll
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) { // Si el scroll es mayor a 200px
+            scrollTopBtn.style.display = 'flex'; // Mostrar el botón
+        } else {
+            scrollTopBtn.style.display = 'none'; // Ocultar el botón
+        }
+    });
+
+    // Al hacer clic, desplazarse hacia arriba suavemente
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth', // Movimiento suave
+        });
+    });
+
+}
