@@ -9,7 +9,7 @@ body {
     margin: 0;
     background-color: #f0f5f0;
     overflow-x: hidden; /*para que sea pantalla completa*/
-    background-image: url("../img/photo-1659051635205-ac0d05db052e (1).jpg");
+    background-image: url("photo-1659051635205-ac0d05db052e (1).jpg");
     z-index: 1;
     background-repeat: no-repeat;
     background-size: cover;
@@ -127,7 +127,7 @@ section {
 .animal {
     padding: 20px;
     border: solid black 3px;
-    background-image: url(../img/mapamundianimal.png);
+    background-image: url(mapamundianimal.png);
     background-size: cover;
     background-position: center;
     list-style: none;
