@@ -11,7 +11,7 @@ body {
     overflow-x: hidden; /*para que sea pantalla completa*/
     background-image: url("../img/photo-1659051635205-ac0d05db052e (1).jpg");
     z-index: 1;
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -25,7 +25,6 @@ a {
     text-decoration: none;
 
 }
-
 /*encabezado*/
 #cap {
     position: fixed;
@@ -39,6 +38,7 @@ a {
     align-items: center;
     z-index: 3;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: height 0.3s ease;
 }
 .navbar{
     margin-right: 50px;
@@ -49,6 +49,7 @@ a {
     font-size: 30px;
     color: limegreen;
     margin: 0 20px;
+    transition: all 0.3s ease;
 }
 
 
@@ -125,16 +126,16 @@ section {
 
 .animal {
     padding: 20px;
-    border: solid black 3px; /* Borde alrededor de cada rectángulo */
+    border: solid black 3px;
     background-image: url(../img/mapamundianimal.png);
-    background-size: cover; /* Asegura que la imagen de fondo cubra todo el rectángulo */
-    background-position: center; /* Centra la imagen de fondo */
+    background-size: cover;
+    background-position: center;
     list-style: none;
     margin: 20px;
     text-align: center;
     width: 800px;
     height: 400px;
-    overflow: hidden; /* Asegura que el contenido no se desborde */
+    overflow: hidden;
     position: relative;
 }
 
@@ -143,7 +144,9 @@ section {
     height: 250px;
     margin: 0;
     z-index: 1;
+    transition: transform 0.3s ease;
 }
+
 
 .animal p {
     color: black;
@@ -192,33 +195,6 @@ footer {
 #final a:hover {
     text-decoration: underline;
 }
-
-/*boton flecha*/
-
-/*en botton poner pixeles en imagen tocar porcentaje*/
-
-.buttoncontent{
-    align-items: center;
-    justify-content: right;
-    display: flex;
-}
-
-.buttonfletxa {
-
-    background-color: rgba(0, 0, 0, 0);
-    border: rgb(0,0,0,0);
-    flex:1;
-    max-width: 80px;
-    height: 40px;
-
-
-}
-
-.imgfletxa{
-    width: 90%;
-    height: 90%;
-}
-
 
 @media (max-width: 767px) {
     h1 {
